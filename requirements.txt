@@ -1,0 +1,9 @@
+django>=5.0
+djangorestframework
+gunicorn
+pillow
+numpy
+opencv-python-headless
+paddleocr
+paddlepaddle
+setuptools
