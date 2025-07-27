@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Gunicorn orqali appni ishga tushirish
-CMD ["gunicorn", "config.wsgi", "--bind", "0.0.0.0:$PORT"]
+CMD exec gunicorn config.wsgi:application --bind 0.0.0.0:${PORT}
